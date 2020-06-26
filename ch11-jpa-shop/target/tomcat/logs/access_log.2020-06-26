@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [26/Jun/2020:17:17:19 +0900] "GET / HTTP/1.1" 200 2113 http-bio-8080-exec-1 1453
+0:0:0:0:0:0:0:1 - - [26/Jun/2020:17:17:19 +0900] "GET /resources/css/bootstrap.css HTTP/1.1" 200 126696 http-bio-8080-exec-3 31
+0:0:0:0:0:0:0:1 - - [26/Jun/2020:17:17:19 +0900] "GET /resources/css/jumbotron-narrow.css HTTP/1.1" 200 1490 http-bio-8080-exec-2 76
+0:0:0:0:0:0:0:1 - - [26/Jun/2020:17:17:19 +0900] "GET /resources/assets/js/jquery.js HTTP/1.1" 200 93111 http-bio-8080-exec-4 102
+0:0:0:0:0:0:0:1 - - [26/Jun/2020:17:17:19 +0900] "GET /resources/js/bootstrap.min.js HTTP/1.1" 200 27731 http-bio-8080-exec-5 98
+0:0:0:0:0:0:0:1 - - [26/Jun/2020:17:17:19 +0900] "GET /resources/assets/ico/favicon.png HTTP/1.1" 200 889 http-bio-8080-exec-8 20
