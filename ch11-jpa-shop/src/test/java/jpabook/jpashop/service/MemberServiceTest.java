@@ -21,34 +21,23 @@ public class MemberServiceTest {
 
     @Test
     public void 회원가입() throws Exception {
-
-        //Given
-        Member member = new Member();
-        member.setName("kim");
-
-        //When
-        Long saveId = memberService.join(member);
-
-        //Then
-        assertEquals(member, memberRepository.findOne(saveId));
+    	
+    	Member member = Member.builder().name("kim").build();
+    	
+    	Long saveId = memberService.join(member);
+    	
+    	assertEquals(member, memberService.findOne(saveId));
     }
 
     @Test(expected = IllegalStateException.class)
     public void 중복_회원_예외() throws Exception {
-
-        //Given
-        Member member1 = new Member();
-        member1.setName("kim");
-
-        Member member2 = new Member();
-        member2.setName("kim");
-
-        //When
-        memberService.join(member1);
-        memberService.join(member2); //예외가 발생해야 한다.
-
-        //Then
-        fail("예외가 발생해야 한다.");
+    	Member member1 = Member.builder().name("kim").build();
+    	Member member2 = Member.builder().name("kim").build();
+    	
+    	memberService.join(member1);
+    	memberService.join(member2);
+    	
+    	fail("예외가 발생해야 한다.");
     }
 
 
